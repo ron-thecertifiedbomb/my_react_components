@@ -1,0 +1,59 @@
+.table_container {
+    width: 100%;
+    border: 0.2px solid rgb(219, 213, 213);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.table_header_container, .table_body_container {
+    display: flex;
+    width: 100%;
+    border-bottom: 0.2px solid rgb(219, 213, 213);
+}
+
+.table_heading, .table_body_row {
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.table_body_container:nth-child(odd) {
+    background-color: rgb(247, 244, 244);
+}
+
+
+
+#react-paginate{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#react-paginate ul {
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 0;
+ }
+ 
+ #react-paginate li {
+    display: inline-block;
+    border: 1px solid rgb(224, 224, 224);
+    color: grey;
+    cursor: pointer;
+    margin-right: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+ }
+ 
+  #react-paginate li a {
+      padding: 2px 5px;
+      display: inline-block;
+      color: grey;
+      outline: none;
+  }
+ 
+ #react-paginate li.active {
+    background: rgb(212, 211, 211);
+    outline: none;
+ }

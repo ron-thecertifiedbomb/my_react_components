@@ -1,0 +1,35 @@
+.toggle_container {
+    width: 40px;
+    height: 20px;
+
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+
+.enabled {
+    background-color: black;
+}
+
+.switch {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(47, 226, 12);
+    border-radius: 50px;
+    position: absolute;
+    top: 0pc;
+    transition: 0.1s;
+  transition-timing-function: ease-in-out;  
+}
+
+.toggle_on {
+    
+    right: 0px;
+    transition: 0.5s;
+  transition-timing-function: ease-in-out;  
+ 
+}
+
+

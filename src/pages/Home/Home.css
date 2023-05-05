@@ -1,0 +1,17 @@
+.home-container {
+  width: 100%;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.search_bar_wrapper {
+  width: 100%;
+}
+.pagination-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Titillium+Web:wght@600&display=swap");
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Manrope", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+
+  --darkmode-color: black;
+  --lightmode-color: grey;
+  --hover-color-light: rgb(214, 211, 211);
+  --transparent-color: transparent;
+  --body-fonts: "Titillium Web", sans-serif;
+  --line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--darkmode-color);
+  color: var(--lightmode-color);
+}
+
+.active {
+  color: var(--darkmode-color);
+}
+
+h4 {
+  font-size: 0.9em;
+  line-height: 2;
+}
+
+a {
+  font-weight: 500;
+  color: var(--lightmode-color);
+  text-decoration: inherit;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}

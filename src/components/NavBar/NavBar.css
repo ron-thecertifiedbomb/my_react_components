@@ -1,0 +1,9 @@
+.activeLink {
+    color: black;
+    text-decoration: underline;   
+}
+
+
+ul li {
+text-transform: uppercase;
+}

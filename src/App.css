@@ -1,0 +1,71 @@
+/* LayOut */
+
+.main_page_layout {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* position: relative; */
+}
+
+.sidebar_column {
+  min-width: 300px; 
+}
+
+.page_column {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* SideBar */
+
+.sidebar_wrapper {
+  /* position: absolute; */
+  width: auto;
+  height: 100vh;
+  /* left: -300px; */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;  
+  
+}
+
+.show {
+  left: 0px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;  
+}
+
+.page_content_wrapper {
+  height: 100%;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; */
+  /* background-color: red; */
+}
+.sidebar_button {
+  width: 70px;
+  height: 30px;
+  background-color: var(--transparent-color);
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Accordion */
+
+.accordion_container {
+  position: absolute;
+  width: 450px;
+  right: 0;
+top: 0;
+}
+
+
+/* NavBar */
+
+.navbar_wrapper {
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+}
