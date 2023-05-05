@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import PaginationApp from "../../components/Pagination/Pagination";
-import SearchBar from "../../components/SearchBar/SearchBar";
+// import PaginationApp from "../../components/Pagination/Pagination";
+// import SearchBar from "../../components/SearchBar/SearchBar";
+import Accordion from "../../components/Accordion/Accordion";
 import "./Home.css";
 
 const Home = () => {
@@ -9,12 +10,15 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="search_bar_wrapper">
+
+
+      <Accordion />
+      {/* <div className="search_bar_wrapper">
         <SearchBar onQuery ={SetQuery}/> 
       </div>
       <div className="pagination-container">
         <PaginationApp query={query}/>
-      </div>
+      </div> */}
 
       
     </div>
