@@ -1,0 +1,27 @@
+/* Clock.css */
+
+.clock-card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .clock-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clock-time {
+    font-size: 28px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Add any additional styling you'd like for the clock card */
+  
+  

@@ -12,7 +12,7 @@
   align-content: center;
   align-items: center;
   height: 50px;
-  border: solid 0.1px var(--lightmode-color);
+  border-bottom: dashed 1px var(--lightmode-color);
   padding-left: 1rem;
   padding-right: 1rem; 
 }
@@ -52,6 +52,11 @@ p {
   margin-bottom: 10px;
 }
 
+.icon {
+  cursor: pointer;
+  
+}
+
 
 
 /* width */
@@ -82,20 +87,4 @@ p {
 
 
 
-
-
-.icon {
-  display: block;
-  transition: 0.2s; /* Transition duration */
-  cursor: pointer;
-}
-
-.on {
-  transform: rotate(180deg);
-}
-
-p {
-    font-size: 14px;
-}
-
-
+  

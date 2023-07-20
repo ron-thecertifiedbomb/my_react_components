@@ -1,25 +1,26 @@
 let icon = (
-  <svg
-    stroke="currentColor"
-    fill="currentColor"
-    stroke-width="0"
-    viewBox="0 0 24 24"
-    height="1em"
-    width="1em"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g>
-      <path fill="none" d="M0 0h24v24H0z"></path>
-      <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path>
-    </g>
-  </svg>
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path><path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path></svg>
 );
+
+
+let plus = (
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path><path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path></svg>
+);
+
+
+let minus = (
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5 11H19V13H5z"></path></svg>
+)
+
+
+
 
 export const accordion = [
   {
     id: 1,
     name: "Careers",
-    icon: icon,
+    plus: plus,
+    minus: minus,
     para: " •	To impersonate or attempt to impersonate company.</strong> If you wish to purchase any product or service made available through the service (“Purchase”), you may be asked to supply certain information relevant to your purchase including but not limited to, your name and contact information, payment details, your billing address, and your shipping information. You represent and warrant that: (i) you have the legal right to use any card(s) or other payment methods in connection with any purchase; and that (ii) the information you supply to us is true, correct, and complete.",
 
     paraTwo:
@@ -34,7 +35,8 @@ export const accordion = [
   {
     id: 2,
     name: "Support",
-    icon: icon,
+    plus: plus,
+    minus: minus,
     para: " Any contests, sweepstakes, or other promotions (collectively, “Promotions”) made available through the service may be governed by rules that are separate from these Terms of Service. If you participate in any Promotions, please review the applicable rules as well as our Privacy Policy. If the rules for a Promotion conflict with these Terms of Service, promotion rules will apply.",
     liOne:
       "•	To impersonate or attempt to impersonate company, a company employee, another user, or any other person or entity.",
@@ -43,14 +45,16 @@ export const accordion = [
   {
     id: 3,
     name: "About",
-    icon: icon,
+    plus: plus,
+    minus: minus,
     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     to: "about",
   },
   {
     id: 4,
     name: "Services",
-    icon: icon,
+    plus: plus,
+    minus: minus,
     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     to: "services",
   },
