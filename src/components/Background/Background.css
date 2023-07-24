@@ -1,0 +1,13 @@
+.background {
+    max-width: 1440px;
+    width: 100%;
+    max-height: 100vh;
+    height: 808px;
+    background-image: url("../../assets/img/pexels-yaroslav-shuraev-8845070 (1).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    /* Add any additional styles you'd like for the background */
+  }
+  

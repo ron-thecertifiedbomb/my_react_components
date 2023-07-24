@@ -1,0 +1,56 @@
+.gallery {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    max-height: 400px;
+    height: 100%;
+  }
+  
+  .thumbnail {
+    width: 100%;
+   height: 100%;
+    display: flex;
+    flex: 1;
+  }
+  .thumbnail-left {
+    width: 100%;
+   height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .column {
+    display: flex;
+    flex: 1;
+  }
+  
+  .profile {
+    max-width: 180px;
+    width: 100%;
+    max-height: 202px;
+    height: 200;
+  }
+  
+  
+  .pictures-container {
+    width: 100%;
+   height: 250px;
+    display: flex;
+  flex-direction: column;
+    gap: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+  height: 100%;
+  }
+  
+  
+  .picture-wrapper {
+    max-width: 283.33px;
+  max-height: 250px;
+  
+  }

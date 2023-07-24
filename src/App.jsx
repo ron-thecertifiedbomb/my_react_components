@@ -23,11 +23,11 @@ function App() {
   return (
     <div className="App">
       <div className="main_page_layout">
-        <div
+        {/* <div
           className={showSideBar ? "sidebar_wrapper show" : "sidebar_wrapper"}
         >
           <SideBar />
-        </div>
+        </div> */}
         <div className="page_column">
           <div className="page_content_wrapper">
             <UserContext.Provider value={user}>
