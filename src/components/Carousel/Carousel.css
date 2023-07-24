@@ -25,11 +25,11 @@
   border-radius: 50%;
 }
 
-.slide-arrow.left {
+.slide-arrow.leftarrow {
   left: 10px;
 }
 
-.slide-arrow.right {
+.slide-arrow.rightarrow {
   right: 10px;
 }
 

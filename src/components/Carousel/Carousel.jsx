@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Carousel.css';
-import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
+import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 
 const Carousel = ({ images }) => {
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const previousSlide = () => {
@@ -35,7 +34,7 @@ const Carousel = ({ images }) => {
       backgroundImage: `url(${url})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '500px'
+      height: '500px',
     };
 
     return (
@@ -43,7 +42,7 @@ const Carousel = ({ images }) => {
         {titles && titles.length > 0 ? (
           <div className="image-titles">
             {titles.map((title, index) => (
-              <button key={index} className="title-button" style={{ display: 'none'}}>
+              <button key={index} className="title-button" style={{ display: 'none' }}>
                 {title}
               </button>
             ))}
@@ -53,12 +52,7 @@ const Carousel = ({ images }) => {
     );
   };
 
-  const titles = [
-    ['Mustang'],
-    ['Ford'],
-    ['Toyota'],
-   
-  ];
+  const titles = [['Mustang'], ['Ford'], ['Toyota']];
 
   const Dots = ({ images, currentImageIndex, handleDotClick }) => (
     <div className="dots">
@@ -67,22 +61,31 @@ const Carousel = ({ images }) => {
           key={index}
           className={currentImageIndex === index ? 'dot active' : 'dot'}
           onClick={() => handleDotClick(index)}
-          
         ></span>
       ))}
     </div>
   );
 
+  // Auto-advance to the next slide after a certain duration (in milliseconds)
+  const autoAdvanceInterval = 2000; // 5 seconds
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, autoAdvanceInterval);
+
+    // Clear the interval when the component is unmounted
+    return () => {
+      clearInterval(timer);
+    };
+  }, [currentImageIndex]);
+
   return (
     <div className="carousel">
-      <Arrow direction="left" clickFunction={previousSlide} glyph={<SlArrowLeft  size={18}  color="white"/>} />
+      <Arrow direction="leftarrow" clickFunction={previousSlide} glyph={<SlArrowLeft size={18} color="white" />} />
       <ImageSlide url={images[currentImageIndex]} titles={titles[currentImageIndex]} />
-      <Arrow direction="right" clickFunction={nextSlide} glyph={<SlArrowRight size={18}  color="white"/>}/>
-      <Dots
-        images={images}
-        currentImageIndex={currentImageIndex}
-        handleDotClick={handleDotClick}
-      />
+      <Arrow direction="rightarrow" clickFunction={nextSlide} glyph={<SlArrowRight size={18} color="white" />} />
+      <Dots images={images} currentImageIndex={currentImageIndex} handleDotClick={handleDotClick} />
     </div>
   );
 };

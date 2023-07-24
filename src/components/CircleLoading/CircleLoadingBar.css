@@ -1,0 +1,25 @@
+/* CircleLoadingBar.css */
+.circle-progress-bar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .circle {
+    fill: transparent;
+    stroke: #ccc;
+    stroke-width: 5;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dasharray 0.3s ease;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-weight: bold;
+  }
+  

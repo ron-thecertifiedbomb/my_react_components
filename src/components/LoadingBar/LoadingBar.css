@@ -1,0 +1,26 @@
+/* LoadingBar.css */
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 18px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+  }
+  
