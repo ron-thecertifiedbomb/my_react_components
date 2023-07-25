@@ -1,13 +1,24 @@
 .background {
-    max-width: 1440px;
-    width: 100%;
-    max-height: 100vh;
-    height: 808px;
-    background-image: url("../../assets/img/pexels-yaroslav-shuraev-8845070 (1).png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: auto;
-    /* Add any additional styles you'd like for the background */
-  }
-  
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+height: 100vh;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image.visible {
+  opacity: 1;
+  z-index: 1;
+}
